@@ -86,59 +86,46 @@ h2 {
 
 .project-images img {
     max-width: 100%;
+    max-height: 200px;
     height: auto;
     margin: 10px 0;
 }
 
 .project-link p {
+    margin-bottom: 10px;
+    text-align: center;
     font-size: 16px;
 }
 
-/* Contact section styles */
-#contact {
-    background-color: #111; /* Dark background for the contact section */
-    padding: 40px;
+
+/* Footer styles */
+footer {
+    background-color: #222; /* Dark background for footer */
     text-align: center;
+    padding: 20px 0;
     color: #fff;
 }
 
-#contact h2 {
-    color: #4800ff; /*  primary color (#4800ff) for section titles */
-    font-size: 28px;
-    margin-bottom: 20px;
+footer p {
+    font-size: 16px;
 }
 
-#contact p {
-    font-size: 18px;
-}
-
-#contact ul {
+footer ul {
     list-style: none;
     padding: 0;
 }
 
-#contact li {
+footer ul li {
     margin: 10px 0;
 }
 
-#contact a {
-    color: #4800ff; /*  primary color (#4800ff) for links in the contact section */
+footer a {
+    color: #4800ff; /*  primary color (#4800ff) for links in the footer */
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     transition: color 0.3s ease-in-out;
 }
 
-#contact a:hover {
+footer a:hover {
     color: #3700d0; /* Darker shade for link hover effect */
-}
-
-/* Footer styles */
-footer {
-    background-color: #222; /* Darker background for footer */
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer p {
-    font-size: 14px;
 }
