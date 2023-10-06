@@ -85,8 +85,8 @@ h2 {
 }
 
 .project-images img {
-    max-width: 50%;
-    max-height: 100px;
+    max-width: 350px;
+    max-height: 200px;
     height: auto;
     margin: 10px 0;
 }
