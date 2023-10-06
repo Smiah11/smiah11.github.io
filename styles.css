@@ -1,4 +1,7 @@
-/* Reset some default styles */
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,47 +10,72 @@
 
 /* Body styles */
 body {
-    background-color: #1a1a1a;
+    background-color: #111; /* Dark background */
     color: #fff;
     font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
 /* Header styles */
 header {
-    background-color: #111;
-    padding: 20px;
+    background-color: #222; /* Darker background for the header */
+    padding: 40px 0;
     text-align: center;
+    color: #fff;
 }
 
 h1 {
-    color: #e6007e; /* Dark purple */
+    color: #4800ff; /* Your new primary color (#4800ff) */
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
 }
 
 /* Navigation styles */
-nav {
-    background-color: #111;
+nav ul {
+    background-color: #222; /* Darker background for navigation */
     text-align: center;
-    padding: 10px;
+    padding: 20px 0;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 15px;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
 }
 
 nav a:hover {
-    color: #e6007e; /* Dark purple on hover */
+    color: #4800ff; /* Your new primary color (#4800ff) on hover */
 }
 
-/* Content section styles */
+/* Section styles */
 section {
-    padding: 20px;
+    padding: 40px;
+}
+
+h2 {
+    color: #4800ff; /* Your new primary color (#4800ff) */
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 /* Footer styles */
 footer {
-    background-color: #111;
+    background-color: #222; /* Darker background for footer */
     text-align: center;
-    padding: 10px;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 14px;
 }
