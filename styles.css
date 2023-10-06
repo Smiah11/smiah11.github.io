@@ -85,7 +85,7 @@ h2 {
 }
 
 .project-images img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     display: block;
     margin: 10px 0;
