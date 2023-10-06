@@ -72,7 +72,6 @@ h2 {
     background-color: #222; /* Dark background for each project */
     padding: 20px;
     border-radius: 5px;
-    display: none; /* Hide project descriptions by default */
 }
 
 .project h3 {
