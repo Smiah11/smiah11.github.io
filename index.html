@@ -20,66 +20,105 @@
     </nav>
     <section id="about">
         <h2>About Me</h2>
-        <p> Hello there! I'm currently a masters student in the University of Central Lancashire, I'm a passionate gamer
-            and a dedicated masters student trying to expand my knowledge and develop the skills needed to create games
-            that people can enjoy and appreciate. </p>
+        <p>Hello there! I'm currently a master's student at the University of Central Lancashire. I'm a passionate gamer
+            and a dedicated master's student trying to expand my knowledge and develop the skills needed to create games
+            that people can enjoy and appreciate.</p>
 
-        <p> Throughout university I have been using C++, however I have also used Dart and C# for other projects. I have used
-            both Unreal Engine and Unity with most my experience being with Unreal., I enjoy AI in games and for my third year
-            project I developed a small stealth game with AI using behaviour trees in Unreal Engine</p>
-        </section>
+        <p>Throughout university, I have been using C++. However, I have also used Dart and C# for other projects. I have used
+            both Unreal Engine and Unity, with most of my experience being with Unreal. I enjoy AI in games, and for my third year
+            project, I developed a small stealth game with AI using behavior trees in Unreal Engine.</p>
+    </section>
 
-        <section id="portfolio">
+    <section id="portfolio">
         <h2>My Projects</h2>
-        <div class="project">
-            <h3>Rogue Neo</h3>
-            <p>Here we have my third year project called Rogue Neo, it's a stealth game with a focus on AI
-                and behaviour trees. The game is set in a world where the player is trying to steal data
-                from a corporation. The game is made in Unreal Engine 4 and uses C++ and Blueprints. Using behaviour trees I
-                was able to make AI that would be able to have hearing and vision senses, the player would utilise their throwable
-                distractions and their surroundings to avoid being detected by the AI. </p>
-        </div>
-        <div class = "project images">
-            <img src="Images/RogueNeo.jpg" alt="Rogue Neo">
-        </div>
-        <div class = "project link">
-            <p> add youtube link here</p>
-        </div>
-    </section>
-        <div class="project">
-            <h3>Movie database app</h3>
-            <p>This is another project I've worked on unrelated to games. A mobile application using Dart, here i used an 
-                api to get information about movies and display them in a list. The user can then click on the movie to get more
-                information and also add them to a watchlist. The app uses a local database to store the watchlist. </p>
-        </div>
-
-    </section>
-        <div class="project">
-            <h3>Zyzz</h3>
-            <p>Here is a game I made during second year in a team setting, we used a kanban approach to organise and set our targets.
-                The game was a 3d platformer made in unreal engine 4, where the player would play as a wizard navigating through levels
-                using parkour to get through the levels, collecting coins and defeating dragons along the way. The game featured level travelling, 
-                a hub area, and multiple levels with different themes. </p>
-            </p>
-        </div>
-    </section>
-        <div class="project">
-            <h3>Post Processing</h3>
-            <p> In this project I was introduced to post processing effect, this involved rendering a scene to a texture instead of the
-                back buffer, creating effects then copying the textures to the backbuffer to show on the screen. This project involved
-                working with pixel shaders and vertex shaders using HLSL.  </p>
-            </div>
-        </section>
         
-        <!-- Footer -->
-        <footer>
-    <section id="contact">
-        <p>Contact me through email or LinkedIn:</p>
-        <ul>
-            <li><a href="mailto:smiahvl@gmail.com">Email</a></li>
-            <li><a href="https://www.linkedin.com/in/saeed-m-39282816b/">LinkedIn</a></li>
-        </ul>
+        <!-- Horizontal project list -->
+        <div class="project-list">
+            <!-- Project 1 -->
+            <div class="project-item" onclick="showProject(1)">
+                <img src="Images/RogueNeo.jpg" alt="Rogue Neo">
+                <p>Rogue Neo</p>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project-item" onclick="showProject(2)">
+                <img src="Images/Placeholder.jpg" alt="Movie Database App">
+                <p>Movie Database App</p>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="project-item" onclick="showProject(3)">
+                <img src="Images/Placeholder.jpg" alt="Zyzz">
+                <p>Zyzz</p>
+            </div>
+            
+            <!-- Project 4 -->
+            <div class="project-item" onclick="showProject(4)">
+                <img src="Images/Placeholder.jpg" alt="Post Processing">
+                <p>Post Processing</p>
+            </div>
+        </div>
+        
+        <!-- Project descriptions -->
+        <div class="project-description">
+            <!-- Project 1 description -->
+            <div id="project1" class="project">
+                <h3>Rogue Neo</h3>
+                <p>Here we have my third-year project called Rogue Neo, it's a stealth game with a focus on AI
+                    and behavior trees. The game is set in a world where the player is trying to steal data
+                    from a corporation. The game is made in Unreal Engine 4 and uses C++ and Blueprints. Using behavior trees, I
+                    was able to make AI that would be able to have hearing and vision senses, and the player would utilize their throwable
+                    distractions and their surroundings to avoid being detected by the AI.</p>
+            </div>
+
+            <!-- Project 2 description -->
+            <div id="project2" class="project">
+                <h3>Movie Database App</h3>
+                <p>This is another project I've worked on unrelated to games. A mobile application using Dart, where I used an 
+                    API to get information about movies and display them in a list. The user can then click on the movie to get more
+                    information and also add them to a watchlist. The app uses a local database to store the watchlist.</p>
+            </div>
+
+            <!-- Project 3 description -->
+            <div id="project3" class="project">
+                <h3>Zyzz</h3>
+                <p>Here is a game I made during the second year in a team setting. We used a Kanban approach to organize and set our targets.
+                    The game was a 3D platformer made in Unreal Engine 4, where the player would play as a wizard navigating through levels
+                    using parkour to get through the levels, collecting coins, and defeating dragons along the way. The game featured level traveling, 
+                    a hub area, and multiple levels with different themes.</p>
+            </div>
+
+            <!-- Project 4 description -->
+            <div id="project4" class="project">
+                <h3>Post Processing</h3>
+                <p>In this project, I was introduced to post-processing effects. This involved rendering a scene to a texture instead of the
+                    back buffer, creating effects, and then copying the textures to the backbuffer to show on the screen. This project involved
+                    working with pixel shaders and vertex shaders using HLSL.</p>
+            </div>
+        </div>
     </section>
-</footer>
+    
+    <!-- Footer -->
+    <footer>
+        <section id="contact">
+            <p>Contact me through email or LinkedIn:</p>
+            <ul>
+                <li><a href="mailto:smiahvl@gmail.com">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/saeed-m-39282816b/">LinkedIn</a></li>
+            </ul>
+        </section>
+    </footer>
+
+    <script>
+        function showProject(projectNumber) {
+            // Hide all project descriptions
+            document.querySelectorAll('.project-description .project').forEach(function(project) {
+                project.style.display = 'none';
+            });
+
+            // Show the selected project description
+            document.getElementById('project' + projectNumber).style.display = 'block';
+        }
+    </script>
 </body>
 </html>

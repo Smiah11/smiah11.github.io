@@ -72,10 +72,11 @@ h2 {
     background-color: #222; /* Dark background for each project */
     padding: 20px;
     border-radius: 5px;
+    display: none; /* Hide project descriptions by default */
 }
 
 .project h3 {
-    color: #4800ff; /*  primary color (#4800ff) for project titles */
+    color: #4800ff; /* primary color (#4800ff) for project titles */
     font-size: 24px;
     margin-bottom: 10px;
 }
@@ -88,7 +89,7 @@ h2 {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 10px 10px;
+    margin: 10px auto;
 }
 
 .project-link p {
@@ -97,6 +98,24 @@ h2 {
     font-size: 16px;
 }
 
+/* Horizontal project list */
+.project-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.project-item {
+    text-align: center;
+    cursor: pointer;
+}
+
+.project-item img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
 
 /* Footer styles */
 footer {
@@ -120,7 +139,7 @@ footer ul li {
 }
 
 footer a {
-    color: #4800ff; /*  primary color (#4800ff) for links in the footer */
+    color: #4800ff; /* primary color (#4800ff) for links in the footer */
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s ease-in-out;
