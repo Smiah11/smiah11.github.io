@@ -35,27 +35,35 @@
         <!-- Horizontal project list -->
         <div class="project-list">
             <!-- Project 1 -->
-            <div class="project-item" onclick="showProject(1)">
-                <img src="Images/RogueNeo.jpg" alt="Rogue Neo">
-                <p>Rogue Neo</p>
+            <div class="project-item">
+                <a href="#project1">
+                    <img src="Images/RogueNeo.jpg" alt="Rogue Neo">
+                    <p>Rogue Neo</p>
+                </a>
             </div>
             
             <!-- Project 2 -->
-            <div class="project-item" onclick="showProject(2)">
-                <img src="Images/Placeholder.jpg" alt="Movie Database App">
-                <p>Movie Database App</p>
+            <div class="project-item">
+                <a href="#project2">
+                    <img src="Images/Placeholder.jpg" alt="Movie Database App">
+                    <p>Movie Database App</p>
+                </a>
             </div>
             
             <!-- Project 3 -->
-            <div class="project-item" onclick="showProject(3)">
-                <img src="Images/Placeholder.jpg" alt="Zyzz">
-                <p>Zyzz</p>
+            <div class="project-item">
+                <a href="#project3">
+                    <img src="Images/Placeholder.jpg" alt="Zyzz">
+                    <p>Zyzz</p>
+                </a>
             </div>
             
             <!-- Project 4 -->
-            <div class="project-item" onclick="showProject(4)">
-                <img src="Images/Placeholder.jpg" alt="Post Processing">
-                <p>Post Processing</p>
+            <div class="project-item">
+                <a href="#project4">
+                    <img src="Images/Placeholder.jpg" alt="Post Processing">
+                    <p>Post Processing</p>
+                </a>
             </div>
         </div>
         
@@ -108,17 +116,5 @@
             </ul>
         </section>
     </footer>
-
-    <script>
-        function showProject(projectNumber) {
-            // Hide all project descriptions
-            document.querySelectorAll('.project-description .project').forEach(function(project) {
-                project.style.display = 'none';
-            });
-
-            // Show the selected project description
-            document.getElementById('project' + projectNumber).style.display = 'block';
-        }
-    </script>
 </body>
 </html>

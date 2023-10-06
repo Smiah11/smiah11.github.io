@@ -103,11 +103,14 @@ h2 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
 
 .project-item {
+    flex-basis: calc(25% - 20px); /* Adjust the width of each item */
     text-align: center;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .project-item img {
