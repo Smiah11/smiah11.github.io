@@ -61,7 +61,7 @@
             <!-- Project 4 -->
             <div class="project-item">
                 <a href="#project4">
-                    <img src="Images/Placeholder.jpg" alt="Post Processing">
+                    <img src="Images/PostProcessing.PNG" alt="Post Processing">
                     <p>Post Processing</p>
                 </a>
             </div>
@@ -124,8 +124,23 @@
             <div id="project4" class="project">
                 <h3>Post Processing</h3>
                 <p>In this project, I was introduced to post-processing effects. This involved rendering a scene to a texture instead of the
-                    back buffer, creating effects, and then copying the textures to the backbuffer to show on the screen. This project involved
-                    working with pixel shaders and vertex shaders using HLSL.</p>
+                    back buffer, creating effects, and then copying the textures to the backbuffer to show on the screen. In simpler terms,
+                    post-processing is used to change the scene in order to reach a desired effect utilising the GPU, similar to adding filters to a photo. 
+                    This project involved, setting up a 3D scene, working with pixel shaders and vertex shaders to manipulate the pixel colours to achieve a specific 
+                    effect using DirectX. I had implemented 7 effects, and also implemented area post processing, which enabled the effects in a specific area, in this case 
+                    a window.</p>
+                    <p>The following are the 7 effects implemented:</p>
+                    <p>Colour Tint - vertical colour gradient</p>
+                    <p>Standard Blur - a basic blur effect </p>
+                    <p>Underwater - colour tint paired with distortion to create an effect similar to being underwater </p>
+                    <p>Gaussian blur - uses an algorithm and uses 2 pixel shaders one blurring vertically and the other horizontally to create a nicer natural blur</p>
+                    <p>Bloom - Increases the lighting from the light source to generate a brighter scene</p>
+                    <p>Hue gradient - a colour gradient that changes colour over time using the HSL colour space (Hue, Saturation, Luminance) </p>
+                    <p>Retro - My personal favourite, Limits the colour palette and increases the size of the pixels to create a Retro game style effect</p>
+                    <a href="https://youtu.be/GhziuDgGqkM"> Post-Processing Youtube Link</a>
+                    <p>***FLASH WARNING IN VIDEO 1:10 - 1:22***</p>
+                    <p>due to the colour gradient transition being coded to change per frame the gradient transition did 
+                        not come up as a smooth transition in the video.</p>
             </div>
         </div>
     </section>
@@ -133,10 +148,11 @@
     <!-- Footer -->
     <footer>
         <section id="contact">
-            <p>Feel free to contact me through email or LinkedIn:</p>
+            <p>Contact Infor and other links:</p>
             <ul>
                 <li><a href="mailto:smiahvl@gmail.com">Email</a></li>
                 <li><a href="https://www.linkedin.com/in/saeed-m-39282816b/">LinkedIn</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PLRr2nQ7_rrCBbxwTT9_-xLqZZ2UrGKCBO">Portfolio playlist</a></li>
             </ul>
         </section>
     </footer>
