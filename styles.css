@@ -29,12 +29,14 @@ h1 {
 
 p {
     font-size: 18px;
-   
 }
 
-p1 {
+/*new paragraph style*/
+
+.p1 {
     font-size: 18px;
-    text-align: center; 
+    text-align: center;
+    color: #fff;
 }
 
 /* Navigation styles */
